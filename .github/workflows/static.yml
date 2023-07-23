@@ -30,20 +30,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print1
-        run: echo "NOW=$(print1 +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV"
+        run: echo "NOW=$(print1 +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v3
       - name: print2
-        run: echo "NOW=$(print2 +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV"
+        run: echo "NOW=$(print2 +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
           path: '.'
       - name: print3
-        run: echo "NOW=$(print3 +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV"
+        run: echo "NOW=$(print3 +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
       - name: print4
-        run: echo "NOW=$(print4 +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV"
+        run: echo "NOW=$(print4 +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
