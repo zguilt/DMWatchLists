@@ -1,3 +1,5 @@
+# DMWatchLists
+
 # Live lists
 - [link to live mixed list](https://dm.watch/api/mixedlist.json)
 - [link to live ban list](https://dmwatch.in/dev/bans.json)
