@@ -29,6 +29,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: self-hosted
     steps:
+      - uses: actions/cache@v3
+        with:
+          path:  /usr/domains/dmwatchlists
+          key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Upload artifact
