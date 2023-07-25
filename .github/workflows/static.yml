@@ -32,7 +32,7 @@ jobs:
       - uses: actions/cache@v3
         with:
           path:  /usr/domains/dmwatchlists
-          key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Upload artifact
