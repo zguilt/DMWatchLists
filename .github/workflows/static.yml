@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/cache@v3
         with:
-          path:  /usr/domains/dmwatchlists
+          path: /mnt/user/domains/dmwatchlists
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
       - name: Checkout
         uses: actions/checkout@v3
